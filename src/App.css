@@ -1,38 +1,83 @@
-.App {
+
+
+body {
+  width: 40%;
+  margin: 0 auto;
+  background-color: #0b246e90;
+}
+
+header {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header h1 {
+  font-size: 100px;
+  color: hsl(47, 13%, 86%);
+  font-weight: 100;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input {
+  font-size: 20px;
+  color: #082541;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #194da1;
+  padding: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.task {
+  background-color: hsl(0, 4%, 85%);
+  padding: 15px;
+  margin: 5px;
+  overflow-x: hidden;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.task span {
+  color: #082541;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+  float: right;
+  margin-right: 20px;
+}
+
+article {
+  display: grid;
+}
+
+.edit-todo {
+  width: 85%;
+  font-size: 16px;
+  color: #082541;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid#082541;
+}
+
+.button {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected {
+  color: #ffffff;
+  background-color: #3f6290f1;
+}
+
+.button.clear {
+  float: right;
+  color: #ffffff;
+  background-color: #3f6290f1;
+  width: 170px;
 }
